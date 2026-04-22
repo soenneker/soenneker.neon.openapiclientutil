@@ -1,20 +1,19 @@
 using Soenneker.Neon.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Neon.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class NeonOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class NeonOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly INeonOpenApiClientUtil _openapiclientutil;
 
-    public NeonOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public NeonOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<INeonOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
