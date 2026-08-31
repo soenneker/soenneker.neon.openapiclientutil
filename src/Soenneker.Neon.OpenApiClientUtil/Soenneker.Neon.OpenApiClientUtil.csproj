@@ -41,7 +41,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Neon.HttpClients" Version="4.0.91" />
+        <PackageReference Include="Soenneker.Neon.HttpClients" Version="4.0.92" />
         <PackageReference Include="Soenneker.Neon.OpenApiClient" Version="4.0.67" />
         <PackageReference Include="Soenneker.Utils.AsyncSingleton" Version="4.0.829" />
     </ItemGroup>
