@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.Neon.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a cached Neon management client backed by the configured HTTP provider.
 /// </summary>
-public interface INeonOpenApiClientUtil: IDisposable, IAsyncDisposable
+public interface INeonOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the cached Neon client, creating it on the first call.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>The configured Neon client.</returns>
     ValueTask<NeonOpenApiClient> Get(CancellationToken cancellationToken = default);
 }
