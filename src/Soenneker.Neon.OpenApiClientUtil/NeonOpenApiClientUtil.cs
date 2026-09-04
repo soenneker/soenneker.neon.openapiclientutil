@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Neon.OpenApiClientUtil;
 
+/// <inheritdoc cref="INeonOpenApiClientUtil" />
 public sealed class NeonOpenApiClientUtil : INeonOpenApiClientUtil
 {
     private readonly AsyncSingleton<NeonOpenApiClient> _client;
