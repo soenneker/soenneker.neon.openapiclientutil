@@ -45,6 +45,6 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Neon.HttpClients" Version="11.0.165" />
-        <PackageReference Include="Soenneker.Neon.OpenApiClient" Version="11.0.120" />
+        <PackageReference Include="Soenneker.Neon.OpenApiClient" Version="11.0.121" />
     </ItemGroup>
 </Project>
